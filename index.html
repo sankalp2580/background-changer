@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BACKGROUND CHANGER</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 20px 100px;
+        }
+        h1{
+            text-align: center;
+            text-decoration: underline;
+        }
+        img{
+            width: 100%;
+            height: auto;
+            margin: 0 auto;
+        }
+        p{
+            font-size: 21px;
+            text-align: justify;
+        }
+        .btn{
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+            border: 2px solid grey;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        #white{
+              background-color: white;
+        }
+        #aqua{
+            background-color: aquamarine;
+
+        }
+        #violet{
+            background-color: #ce9aff;
+
+        }
+        #black{
+            background-color: black;
+
+        }
+        #color-switcher{
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <div id="color-switcher">
+        <span class="btn" id="white" onclick="changeBG('#ffffff')"></span>
+        <span class="btn" id="aqua" onclick="changeBG('#7fffd4')"></span>
+        <span class="btn" id="violet" onclick="changeBG('#ce9aff')"></span>
+        <span class="btn" id="black" onclick="changeBG('#000000')"></span>
+    </div>
+    <h1 class="text">About Us</h1>
+    <img src="https://th.bing.com/th/id/R.33983676ea228baba1667eec1540aa35?rik=MIydqBsFhY9fyQ&riu=http%3a%2f%2fwww.mbabizmag.com%2fwp-content%2fuploads%2f2016%2f02%2fhappy-business-people.png&ehk=GVvMETg7ciRH9ut0KeOf%2fPx3BLEABkRyw0UE%2fW9i%2fB0%3d&risl=&pid=ImgRaw&r=0" alt="imge" id="picture">
+    <p class="text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi alias repudiandae ipsum veritatis, fugiat nam nihil consequatur magnam totam eligendi! Magnam, itaque tenetur. Tenetur quibusdam ratione enim exercitationem eos fugit a hic reiciendis. Quae dolorum, labore provident cumque pariatur ipsa eveniet quas deserunt animi earum ea sint officiis nobis harum accusamus, reiciendis expedita? Rem corporis maxime atque vero obcaecati repellat earum, culpa asperiores perferendis ipsum praesentium quisquam placeat dicta sequi tempora blanditiis quasi mollitia alias voluptatibus molestias quae deserunt ea. Et animi magni beatae ad aspernatur suscipit, aliquam, quidem quam tempore vel qui nemo ea consequuntur expedita officiis necessitatibus, quisquam deserunt totam? Quis quisquam accusamus explicabo. Numquam laboriosam fugiat harum tempora aspernatur neque possimus asperiores obcaecati ipsum? Sequi quo laboriosam veniam, doloribus similique consequatur voluptatum consectetur, suscipit iure, doloremque itaque magni esse aspernatur eligendi aperiam eos nihil et soluta quidem? Ad minima eligendi quasi quaerat delectus maxime ullam, ipsam aliquid, eius sapiente mollitia dolore deleniti tempore odit enim rem vitae sequi animi harum illo magnam, veniam rerum. Voluptatum atque numquam delectus eius maiores earum sit esse ipsa impedit dolorum nemo beatae ipsam, placeat quis, facere saepe porro in, provident labore. Esse vel consectetur perferendis aliquid asperiores laudantium ullam alias aspernatur dolores, ab excepturi quod doloremque suscipit eum accusamus eligendi ipsam quos nobis debitis velit eveniet in sint! Quisquam reprehenderit ullam eaque nobis vero quibusdam odio neque esse eligendi ducimus omnis officiis nisi laboriosam, aliquid, tempore corporis temporibus labore dicta ipsa at eveniet recusandae quam tempora. Mollitia culpa cumque voluptas dolores reprehenderit molestiae quas voluptate quisquam, velit totam eaque voluptates placeat dolor dicta iure, est delectus distinctio minus laudantium excepturi ad repudiandae rerum veritatis facere. Numquam nihil commodi, ex, totam eius labore corrupti ut autem magnam ad sed pariatur. Quidem itaque animi voluptas doloribus sed earum! Eos dignissimos cum deserunt magni nisi possimus deleniti facere, aut fuga architecto, consequatur voluptas laboriosam modi omnis earum vitae eum ullam excepturi pariatur! Quo modi rerum amet voluptate voluptatem! Voluptas consectetur fugiat voluptatem officia nobis alias minima animi laborum ipsam sequi labore soluta dolorem molestias incidunt sint a enim suscipit non, sunt ex? Consectetur necessitatibus perspiciatis assumenda dolores aliquid, doloribus repudiandae? Debitis illo nam nesciunt, maxime praesentium deserunt, ipsum animi unde ex consequatur at, vel quaerat fugiat? Assumenda non exercitationem deserunt et, minus asperiores necessitatibus quisquam accusantium cum culpa eius animi vitae quae nemo tempore. Provident exercitationem at similique rerum architecto quibusdam. Quo animi iusto odit veniam eaque. Consectetur, ullam. Praesentium ipsam eveniet vitae, in accusantium, magni dolorem corporis magnam eos aperiam voluptas, et rerum nihil adipisci dolores quaerat officiis tempore deleniti. Quibusdam, deserunt reiciendis a optio, saepe ipsum iusto non perferendis rerum quos eligendi cum temporibus ullam architecto dicta expedita vero voluptate molestiae asperiores tempore nesciunt eveniet beatae accusamus. Consectetur dolore animi, nesciunt labore facere ipsum doloribus. Tenetur, unde modi amet animi cumque dolorum consequuntur nesciunt nam quia, facilis deleniti natus rem nobis, ad molestiae sunt porro velit quos iste maxime. Quibusdam, officiis! Voluptates vitae vero cumque facilis aut consequatur voluptatem magni odit quae.
+    </p>
+
+    <script>
+        function changeBG(color){
+            document.body.style.backgroundColor = color;
+            let txt = document.getElementsByClassName("text");
+            if(color == "#000000"){
+                for(let elm of txt){
+                    elm.style.color = "white";
+                }
+            }else{
+                for(let elm of txt){
+                    elm.style.color = "black";
+                }
+            }
+        }
+    </script>
+
+</body>
+</html>
